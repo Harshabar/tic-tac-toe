@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    transition: 0.2s ease-in-out;
+    user-select: none;
+}
+body{
+    background-color: #548587;
+    text-align: center;
+}
+.aline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.turncontainer{
+    width: 170px;
+    height: 80px;
+    padding-top: 10px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    position: relative;
+}
+h3{
+    margin: 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.turnbox{
+    border: 3px solid #000;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.turncontainer .turnbox:nth-child(even){
+    border-right: none;
+}
+.bg{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 85px;
+    height: 40px;
+    background-color: #165d60;
+    z-index: -1;
+}
+.container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game{
+    height: 60vmin;
+    width: 58vmin;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: 2px solid black;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.3);
+    font-size: 8vmin;
+    color: black;
+    background-color: #165d60;
+}
+.box:hover{
+    background-color: white;
+    color: black;
+}
+#resetbtn{
+    padding: 1rem;
+    margin-top: 10px;
+    font-size: 1.25rem;
+    border-radius: 5px;
+    background-color: #165d60;
+    color: white;
+    border: none;
+    display: none;
+}
+#resetbtn:hover{
+    padding: 10px 40px;
+    font-size: 1.25rem;
+    background-color: white;
+    color: #165d60;
+    border: none;
+}
+h2{
+    color: black;
+}
+
+#newbtn{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #165d60;
+    color: white;
+    border: none;
+}
+#msg {
+    color: #165d60;
+    font-size: 8vmin;
+}
+.msg-container{
+    height: 20vmin;
+}
+.hide{
+    display: none;
+}
